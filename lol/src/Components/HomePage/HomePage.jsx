@@ -1,22 +1,23 @@
 import React, { useEffect, useState } from "react";
 import BasicExample from "../NavBar/Navbar";
-import 
-export function HomePage(){
-    const [creaciones, setCreaciones] = useState([])
-    useEffect(() => {
-        fetch("../Repositorios/Creaciones.json")
-        .then(response => response.json())
-        .then(data => {
-            setCreaciones(data)
-            console.log(data)
-        })
-    }, [])
-    
-    return(
-           
-        
+import { CardCreacion } from "./CardCreacion";
+import "./HomePage.css"
+import creaciones from "../repositorios/creaciones.json";
+export function HomePage() {
+    console.log(creaciones)
+    return (
         <>
-        <BasicExample/>
+            <BasicExample />
+            <div className="cardContainer">
+            {
+                creaciones.map(listaCreaciones =>(
+                    
+                    <CardCreacion nombre = {listaCreaciones.titulo} imagen = {listaCreaciones.img} texto = {listaCreaciones.descripción}/>
+                
+
+                ))
+            }
+            </div>
             <h1>Lol</h1>
         </>
     )
