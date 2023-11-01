@@ -13,8 +13,8 @@ export function HomePage() {
                 creaciones.map(listaCreaciones =>(
                     
                     <CardCreacion nombre = {listaCreaciones.titulo} imagen = {listaCreaciones.img} texto = {listaCreaciones.descripción}/>
-                
-
+                    
+                    
                 ))
             }
             </div>
