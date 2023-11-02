@@ -8,17 +8,17 @@ export function HomePage() {
     return (
         <>
             <BasicExample />
-            <div className="cardContainer">
+            <div className="cardContainer" >
             {
                 creaciones.map(listaCreaciones =>(
                     
-                    <CardCreacion nombre = {listaCreaciones.titulo} imagen = {listaCreaciones.img} texto = {listaCreaciones.descripción}/>
+                    <CardCreacion key={listaCreaciones.id} nombre = {listaCreaciones.titulo} imagen = {listaCreaciones.img} texto = {listaCreaciones.descripción}/>
                     
                     
                 ))
             }
             </div>
-            <h1>Lol</h1>
+            <h1>Lal</h1>
         </>
     )
 }

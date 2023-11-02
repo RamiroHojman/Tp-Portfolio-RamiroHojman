@@ -7,12 +7,11 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container className="contenido">
-        <Navbar.Brand href="#home" className='texto'>React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/" className='texto'>Home</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-          <Nav.Link href="#home" className='texto'>Home</Nav.Link>
-          <Nav.Link href="#link" className='texto'>Link</Nav.Link>
+          <Nav.Link href="/Favoritos" className='texto'>Favoritos</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
