@@ -1,39 +1,46 @@
 [
 {
     "id":"1",
-"titulo":"charla ted",
+"titulo":"Charla Ted",
 "img": "https://i.ytimg.com/vi/KbKcM5Nl0SE/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAs4FigIMCAAQARhyIFAoRDAP&rs=AOn4CLAvF6t3Jx1z3TXkQeNTLzpUgfT9Uw",
-"descripción":"di una charla ted anasheeeee"
+"descripción":"di una Charla Ted anasheeeee",
+"fecha":"11/11/2022"
 },
 {
     "id":"2",
 "titulo":"Destacado en Ux Challenge",
 "img":"http://drive.google.com/uc?export=view&id=12Jwtmxd87bXAkuamNE-6RRbiSNvekrRR",
-"descripción":"es un destacadasheeeee"
+"descripción":"es un destacadasheeeee",
+"fecha":"11/11/2022"
+
 },
 {
     "id":"3",
-"titulo":"charla ted",
+"titulo":"Charla Ted",
 "img": "https://i.ytimg.com/vi/KbKcM5Nl0SE/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAs4FigIMCAAQARhyIFAoRDAP&rs=AOn4CLAvF6t3Jx1z3TXkQeNTLzpUgfT9Uw",
-"descripción":"di una charla ted anasheeeee"
+"descripción":"di una Charla Ted anasheeeee",
+"fecha":"11/11/2022"
 },
 {
     "id":"4",
 "titulo":"Destacado en Ux Challenge",
 "img":"http://drive.google.com/uc?export=view&id=12Jwtmxd87bXAkuamNE-6RRbiSNvekrRR",
-"descripción":"es un destacadasheeeee"
+"descripción":"es un destacadasheeeee",
+"fecha":"11/11/2022"
 },
 {
     "id":"5",
-"titulo":"charla ted",
+"titulo":"Charla Ted",
 "img": "https://i.ytimg.com/vi/KbKcM5Nl0SE/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAs4FigIMCAAQARhyIFAoRDAP&rs=AOn4CLAvF6t3Jx1z3TXkQeNTLzpUgfT9Uw",
-"descripción":"di una charla ted anasheeeee"
+"descripción":"di una Charla Ted anasheeeee",
+"fecha":"11/11/2022"
 },
 {
     "id":"6",
 "titulo":"Destacado en Ux Challenge",
 "img":"http://drive.google.com/uc?export=view&id=12Jwtmxd87bXAkuamNE-6RRbiSNvekrRR",
-"descripción":"es un destacadasheeeee"
+"descripción":"es un destacadasheeeee",
+"fecha":"11/11/2022"
 }
 
 ]

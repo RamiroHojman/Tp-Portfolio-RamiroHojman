@@ -12,7 +12,8 @@ function App() {
   return (
     <>
     <FavoritosProvider>
-      <BrowserRouter>
+      <BrowserRouter className="lol">
+      <BasicExample/>
         <Routes>
           <Route path="/" element={<HomePage/>}></Route>
           <Route path="/Creacion" element={<Creacion/>}></Route>

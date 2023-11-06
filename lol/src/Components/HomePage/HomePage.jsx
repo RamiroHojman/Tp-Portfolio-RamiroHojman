@@ -7,12 +7,12 @@ export function HomePage() {
     console.log(creaciones)
     return (
         <>
-            <BasicExample />
             <div className="cardContainer" >
             {
                 creaciones.map(listaCreaciones =>(
                     
-                    <CardCreacion key={listaCreaciones.id} nombre = {listaCreaciones.titulo} imagen = {listaCreaciones.img} texto = {listaCreaciones.descripción}/>
+                    <CardCreacion key={listaCreaciones.id} 
+                    nombre = {listaCreaciones.titulo} imagen = {listaCreaciones.img} texto = {listaCreaciones.descripción} fecha ={listaCreaciones.fecha}/>
                     
                     
                 ))

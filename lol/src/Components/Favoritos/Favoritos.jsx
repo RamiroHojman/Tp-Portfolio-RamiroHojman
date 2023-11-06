@@ -13,7 +13,6 @@ export function Favoritos(){
     
     return(
         <>
-        <BasicExample/>
         {
                 FavoritosG[1].map(listaCreaciones =>(
                     

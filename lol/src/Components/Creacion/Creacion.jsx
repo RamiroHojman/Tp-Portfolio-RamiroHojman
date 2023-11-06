@@ -5,26 +5,44 @@ import BasicExample from "../NavBar/Navbar";
 import { useContext } from "react"
 import { FavoritosContext } from '../Context/CreacionesContext';
 import { Favoritos } from "../Favoritos/Favoritos";
+import "./Creacion.css"
+import { Button } from "react-bootstrap";
 export function Creacion() {
     // const {agregarFavoritos} = useCreaciones()
     const location = useLocation();
-    const {setFavoritosG} = useContext(FavoritosContext)
-    const {FavoritosG} = useContext(FavoritosContext)
-    function apretar(){
+    console.log(location.state)
+    const { setFavoritosG } = useContext(FavoritosContext)
+    const { FavoritosG } = useContext(FavoritosContext)
+    function apretar() {
         setFavoritosG([...FavoritosG, location.state]);
         console.log(FavoritosG);
         localStorage.setItem('Favoritos', JSON.stringify([...FavoritosG, location.state]));
         console.log("localstorage", localStorage.getItem('Favoritos'));
     }
-    function borrar(){
+    function borrar() {
         localStorage.removeItem('Favoritos')
     }
     return (
         <>
-        <BasicExample/>
-        <h1>Lol</h1>    
-        <button onClick={apretar}>favoritos</button>
-        <button onClick={borrar}>Borrar</button>
+            <div className="container Creacion">
+                <div className="componentesybotones">
+                    <div className="creacionComponents">
+                        <div className="creacionVista">
+                            <img className="imagen" src={location.state.imagen} />
+                        </div>
+                        <div className="creacionDetalles">
+                            <h1 className="tituloCreacion">{location.state.nombre}</h1>
+                            <h2 className="textoCreacion">Descripción: {location.state.texto}</h2>
+                            <h2 className="textoCreacion">Fecha: {location.state.fecha}</h2>
+
+                        </div>
+                        <div className="botonesCreacion">
+                        <Button className="botonCreacion" variant="danger" onClick={borrar}>Borrar</Button>
+                        <Button className="botonCreacion" onClick={apretar}>favoritos</Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
