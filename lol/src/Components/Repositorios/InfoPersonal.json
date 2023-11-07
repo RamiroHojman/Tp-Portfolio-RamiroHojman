@@ -1,0 +1,12 @@
+
+    {
+        "id":"1",
+        "nombre":"Ramiro Hojman",
+        "img": "http://drive.google.com/uc?export=view&id=1NRctCxgF9WL5ljv4WzNWK61dYswW9wQD",
+        "banner":"https://i.pinimg.com/originals/71/9b/1f/719b1f1e643b903158d18547cf1d7c8f.png",
+        "descripción":"Soy muy buena persona",
+        "nacimiento":"09/1/2006",
+        "skills":{
+            "skill1":"no se soy re capo"
+        }
+    }

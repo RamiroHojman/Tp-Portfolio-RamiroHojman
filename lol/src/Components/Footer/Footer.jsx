@@ -1,8 +1,14 @@
-import React from "react";
-import "./Footer.css"
-export function Footer(){
-<div className="footerLol">
-<h1>lol</h1>
-</div>
+import React from 'react';
 
-}
+export function Footer(){
+  return (
+    <footer>
+      <div>
+        <p className='piezaFooter'>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
+        <p className='piezaFooter'>Teléfono: 555-555-555</p>
+        <p className='piezaFooter'>Email: ejemplo@dominio.com</p>
+      </div>
+    </footer>
+  );
+};
+

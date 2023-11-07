@@ -1,3 +1,30 @@
-.footerLol{
-    background-color: gray;
+footer {
+    background-color: #ff0000;
+    display: flex;
+    justify-content: center;
+  }
+  
+  footer div {
+    max-width: 600px;
+    width: 100%; /* Cambiamos esto a 100% */
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    width: 50%; /* Añadimos un ancho para distribuir el espacio de manera uniforme */
+  }
+  
+  p {
+    font-size: 1em;
+    margin-bottom: 5px;
+    width: 50%; /* Añadimos un ancho para distribuir el espacio de manera uniforme */
+  }
+  
+
+.piezaFooter {
+    margin-left: 2%;
 }

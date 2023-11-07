@@ -7,7 +7,7 @@ export function HomePage() {
     console.log(creaciones)
     return (
         <>
-            <h1>Creaciones destacadas:</h1>
+                <h1 className="tituloHP">Creaciones destacadas</h1>
             <div className="cardContainer" >
                 {
                     creaciones.filter(listaCreaciones => listaCreaciones.destacado).map(listaCreaciones => (

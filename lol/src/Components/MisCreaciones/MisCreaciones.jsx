@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BasicExample from "../NavBar/Navbar";
-import { CardCreacion } from "./CardCreacion";
+import { CardCreacion } from "../HomePage/CardCreacion";
 import "./MisCreaciones.css"
 import creaciones from "../repositorios/creaciones.json";
 

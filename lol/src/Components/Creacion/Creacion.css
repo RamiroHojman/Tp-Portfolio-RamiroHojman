@@ -1,46 +1,43 @@
-.Creacion{
-    background-color: white;
-    margin-top: 3%;
-}
-.tituloCreacion {
-    font-size: 200%;
-    color: black;
-}
-
-.creacionDetalles {
-    margin-left: 10%;
-   
-}
-
-.imagen {
-    width: 720px;
-}
-
-.creacionComponents {
+.container.Creacion {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+  }
+  
+  .creacionComponents {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-top: 2%;
-    padding-bottom: 2%;
-
-}
-
-.textoCreacion {
-    font-size: 100%;
-    font-weight: 400;
-}
-.componentesybotones{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .creacionVista img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .creacionDetalles {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .tituloCreacion {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .textoCreacion {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .botonesCreacion {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-.botonCreacion{
-    margin-right: 3%;
-}
-.botonesCreacion{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-top: 2%;
-    width: 50%;
-}
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .botonCreacion {
+    margin: 0 10px;
+  }
+  
