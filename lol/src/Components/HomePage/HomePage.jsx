@@ -7,18 +7,15 @@ export function HomePage() {
     console.log(creaciones)
     return (
         <>
+            <h1>Creaciones destacadas:</h1>
             <div className="cardContainer" >
-            {
-                creaciones.map(listaCreaciones =>(
-                    
-                    <CardCreacion key={listaCreaciones.id} 
-                    nombre = {listaCreaciones.titulo} imagen = {listaCreaciones.img} texto = {listaCreaciones.descripción} fecha ={listaCreaciones.fecha}/>
-                    
-                    
-                ))
-            }
+                {
+                    creaciones.filter(listaCreaciones => listaCreaciones.destacado).map(listaCreaciones => (
+                        <CardCreacion key={listaCreaciones.id}
+                            nombre={listaCreaciones.titulo} imagen={listaCreaciones.img} texto={listaCreaciones.descripción} fecha={listaCreaciones.fecha} />
+                    ))
+                }
             </div>
-            <h1>Lal</h1>
         </>
     )
 }

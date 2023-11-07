@@ -7,14 +7,17 @@ import { FavoritosContext } from '../Context/CreacionesContext';
 import { Favoritos } from "../Favoritos/Favoritos";
 import "./Creacion.css"
 import { Button } from "react-bootstrap";
+
 export function Creacion() {
     // const {agregarFavoritos} = useCreaciones()
     const location = useLocation();
     console.log(location.state)
+    const {agregarFavoritos} = useContext(FavoritosContext)
     const { setFavoritosG } = useContext(FavoritosContext)
     const { FavoritosG } = useContext(FavoritosContext)
-    function apretar() {
-        setFavoritosG([...FavoritosG, location.state]);
+   
+    function apretar() {     
+        agregarFavoritos(location.state)
         console.log(FavoritosG);
         localStorage.setItem('Favoritos', JSON.stringify([...FavoritosG, location.state]));
         console.log("localstorage", localStorage.getItem('Favoritos'));
