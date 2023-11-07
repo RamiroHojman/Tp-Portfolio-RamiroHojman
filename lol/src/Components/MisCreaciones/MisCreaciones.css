@@ -1,0 +1,21 @@
+.card{
+    max-width: 20%;
+    min-width: 20%;
+    padding: 10px   ;
+    min-height: 20%;
+    max-height: 20%;
+    margin-left: 5%;
+    margin-top: 1%;
+
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-right: 5%;
+}
+body{
+    background-color: #f3f3f3;
+}
+button{
+}

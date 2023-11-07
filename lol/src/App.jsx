@@ -8,6 +8,7 @@ import { Creacion } from './Components/Creacion/Creacion'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Favoritos } from './Components/Favoritos/Favoritos'
 import { Footer } from './Components/Footer/Footer'
+import { MisCreaciones } from './Components/MisCreaciones/MisCreaciones'
 import {FavoritosProvider} from './Components/Context/CreacionesContext'
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
           <Route path="/" element={<HomePage/>}></Route>
           <Route path="/Creacion" element={<Creacion/>}></Route>
           <Route path="/Favoritos" element={<Favoritos/>}></Route>
-
+          {/* <Route path="/MisCreaciones" element={<MisCreaciones/>}></Route> */}
         </Routes>
         <Footer/>
       </BrowserRouter>
