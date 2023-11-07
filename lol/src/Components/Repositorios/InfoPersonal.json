@@ -6,6 +6,8 @@
         "banner":"https://i.pinimg.com/originals/71/9b/1f/719b1f1e643b903158d18547cf1d7c8f.png",
         "descripción":"Soy muy buena persona",
         "nacimiento":"09/1/2006",
+        "rol":"Estudiante ORT",
+        "ubicacion":"Buenos Aires",
         "skills":{
             "skill1":"no se soy re capo"
         }

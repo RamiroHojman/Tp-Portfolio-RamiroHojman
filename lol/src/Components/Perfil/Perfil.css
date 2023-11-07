@@ -1,24 +1,48 @@
-.perfil-container {
-}
+.perfil-container {}
 
 .banner img {
-    width: 100%; /* El banner ocupará todo el ancho del contenedor */
-    max-height: 250px; /* Establecemos una altura máxima de 200px para el banner */}
+    width: 100%;
+    /* El banner ocupará todo el ancho del contenedor */
+    max-height: 250px;
+    /* Establecemos una altura máxima de 200px para el banner */
+}
 
 .foto img {
-  width: 200px; /* Ancho de la foto de perfil */
-  height: 200px; /* Altura de la foto de perfil */
-  border-radius: 50%; /* Para que sea un círculo */
-  margin-top: -5%; /* Posicionamos la foto hacia arriba */
+    width: 200px;
+    /* Ancho de la foto de perfil */
+    height: 200px;
+    /* Altura de la foto de perfil */
+    border-radius: 50%;
+    /* Para que sea un círculo */
+    margin-top: -5%;
+    /* Posicionamos la foto hacia arriba */
 }
 
-h2, p {
-  display: inline-block; /* Para que se alineen horizontalmente */
-  margin: 5px; /* Espacio entre elementos */
+h2,
+p {
+    display: inline-block;
+    /* Para que se alineen horizontalmente */
+    margin: 5px;
+    /* Espacio entre elementos */
 }
+
 .fotonombre {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-left: 8%;
-  }
+}
+
+.infoPerfil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 8%;
+}
+.ubicacion{
+    color: rgba(0, 0, 0, 0.458);
+}
+.lineaPerfil {
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    width: 100%;
+}

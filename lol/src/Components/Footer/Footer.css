@@ -1,8 +1,4 @@
-footer {
-    background-color: #ff0000;
-    display: flex;
-    justify-content: center;
-  }
+
   
   footer div {
     max-width: 600px;
@@ -27,4 +23,7 @@ footer {
 
 .piezaFooter {
     margin-left: 2%;
+}
+.footerContain{
+  background-color: red;
 }
