@@ -7,6 +7,7 @@ import BasicExample from './Components/NavBar/Navbar'
 import { Creacion } from './Components/Creacion/Creacion'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { Favoritos } from './Components/Favoritos/Favoritos'
+import { Footer } from './Components/Footer/Footer'
 import {FavoritosProvider} from './Components/Context/CreacionesContext'
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/Favoritos" element={<Favoritos/>}></Route>
 
         </Routes>
+        <Footer/>
       </BrowserRouter>
       </FavoritosProvider>
     </>

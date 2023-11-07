@@ -8,14 +8,42 @@
     margin-top: 1%;
 
 }
-.cardContainer{
-    display: flex;
+
+.image{
+    width: 700px;
+}
+
+.Link{
+    color: black;
+}
+.botonLink{
+    color: black;
+    text-decoration: none;
+     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-right: 5%;
 }
-body{
-    background-color: #f3f3f3;
+.textoHome, .imagenDiv {
+    align-self: center; /* Centra el contenido verticalmente */
 }
-button{
+.textoHome {
+    max-width: 70%; /* Ajusta el ancho del texto según tus necesidades */
+}
+.image {
+    max-width: 100%; /* Asegura que la imagen no exceda su contenedor */
+}.cardContent {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; /* Divide el contenido en dos columnas iguales */
+    gap: 10px; /* Espacio entre las columnas */
+    margin-top: 2%;
+}
+.linea {
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin-top: 7%; /* Ajusta el espacio entre la imagen y la línea según tus necesidades */
+    width: 168%;
+}
+.CardCreacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
