@@ -8,9 +8,7 @@
         "nacimiento":"09/1/2006",
         "rol":"Estudiante ORT",
         "ubicacion":"Buenos Aires",
-        "skills":{
-            "skill1":"no se soy re capo"
-        }
+        "skills":["no se soy re capo", "no se soy re capo", "no se soy re capo"]
     },
     {
         "id":"2",
@@ -21,7 +19,7 @@
         "nacimiento":"01/4/2006",
         "rol":"Estudiante ORT",
         "ubicacion":"Buenos Aires",
-        "skills": ["no se soy re capo", "no se soy re capo", "no se soy re capo"]
+        "skills": ["no se soy re capo, me llamo Alan", "no se soy re capo, me llamo Alan", "no se soy re capo, me llamo Alan"]
 
     }
 ]

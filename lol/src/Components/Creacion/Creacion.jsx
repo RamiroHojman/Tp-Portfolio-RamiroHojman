@@ -1,8 +1,9 @@
-// ... (importaciones)
-
 export function Creacion() {
     const location = useLocation();
     const { FavoritosG, setFavoritosG } = useContext(FavoritosContext);
+
+    // Estado para controlar la visibilidad del modal
+    const [showModal, setShowModal] = useState(false);
 
     function apretar() {
         const fav = location.state;
@@ -18,6 +19,9 @@ export function Creacion() {
         localStorage.setItem('Favoritos', JSON.stringify(updatedFavoritosG));
         console.log("localstorage", localStorage.getItem('Favoritos'));
         console.log("FavoritosG", updatedFavoritosG);
+
+        // Abre el modal después de guardar en favoritos
+        setShowModal(true);
     }
 
     function borrar() {
@@ -51,6 +55,8 @@ export function Creacion() {
                     </div>
                 </div>
             </div>
+
+            {showModal && <ModalComponent />}
         </>
     )
 }
