@@ -1,3 +1,9 @@
+import { useLocation } from 'react-router-dom';
+import { FavoritosContext } from '../Context/CreacionesContext';
+import React, { useContext, useState } from 'react';
+import { Button } from 'react-bootstrap';
+import ModalComponent from '../Modal/Modal'
+
 export function Creacion() {
     const location = useLocation();
     const { FavoritosG, setFavoritosG } = useContext(FavoritosContext);
