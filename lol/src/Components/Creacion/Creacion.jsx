@@ -55,14 +55,23 @@ export function Creacion() {
                             <h2 className="textoCreacion">Fecha: {location.state.fecha}</h2>
                         </div>
                         <div className="botonesCreacion">
-                            {estaEnFavoritos && <Button className="botonCreacion" variant="danger" onClick={borrar}>Borrar</Button>}
-                            <Button className="botonCreacion" onClick={apretar}>Favoritos</Button>
+                            {estaEnFavoritos ? (
+                                <Button className="botonCreacion" variant="danger" onClick={borrar}>
+                                    Borrar
+                                </Button>
+                            ) : (
+                                <Button className="botonCreacion" onClick={apretar}>
+                                    Favoritos
+                                </Button>
+                            )}
+                            {showModal && <ModalComponent />}
                         </div>
+
                     </div>
                 </div>
             </div>
 
-            {showModal && <ModalComponent />}
+
         </>
     )
 }
