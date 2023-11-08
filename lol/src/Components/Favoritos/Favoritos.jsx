@@ -14,8 +14,8 @@ export function Favoritos(){
     return(
         <>
         {
-                FavoritosG && FavoritosG[1].map(listaCreaciones =>(
-                    <CardCreacion key={listaCreaciones.id} nombre = {listaCreaciones.titulo} imagen = {listaCreaciones.img} texto = {listaCreaciones.descripción}/>
+                FavoritosG && FavoritosG.map((listaCreaciones, index) =>(
+                    <CardCreacion key={index} nombre = {listaCreaciones.nombre} imagen = {listaCreaciones.imagen} texto = {listaCreaciones.texto}/>
                 ))
             }
         </>

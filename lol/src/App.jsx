@@ -22,8 +22,8 @@ function App() {
           <Route path="/Creacion" element={<Creacion/>}></Route>
           <Route path="/Favoritos" element={<Favoritos/>}></Route>
           <Route path="/Perfil" element={<Perfil/>}></Route>
+          <Route path="/MisCreaciones" element={<MisCreaciones/>}></Route>
 
-          {/* <Route path="/MisCreaciones" element={<MisCreaciones/>}></Route> */}
         </Routes>
         <Footer/>
       </BrowserRouter>
