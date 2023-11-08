@@ -1,4 +1,4 @@
-
+[
     {
         "id":"1",
         "nombre":"Ramiro Hojman",
@@ -11,4 +11,18 @@
         "skills":{
             "skill1":"no se soy re capo"
         }
+    },
+    {
+        "id":"2",
+        "nombre":"Alan Plaun",
+        "img": "https://lh3.googleusercontent.com/a/ACg8ocLWNErlvDunPkRnS9_ymgcSKp5g3-Y6l7yPtT10UpAW1A=s288-c-no",
+        "banner":"https://pbs.twimg.com/media/F7YIb-yXsAAwQ_U.jpg:large",
+        "descripción":"Me llamo Alan, no voy a decir mi apodo.",
+        "nacimiento":"01/4/2006",
+        "rol":"Estudiante ORT",
+        "ubicacion":"Buenos Aires",
+        "skills":{
+            "skill1":"no se yo tambien soy re capo"
+        }
     }
+]
