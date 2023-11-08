@@ -42,7 +42,7 @@ export function Creacion() {
                             <h2 className="textoCreacion">Fecha: {location.state.fecha}</h2>
                         </div>
                         <div className="botonesCreacion">
-                            <Button className="botonCreacion" variant="danger" onClick={borrar}>Borrar</Button>
+                            <Button className="botonCreacion" variant="danger" onClick={borrar}>Borrar</Button> {/* hay que hacer que solo aparezca cuando esta en favoritos */}
                             <Button className="botonCreacion" onClick={apretar}>Favoritos</Button>
                         </div>
                     </div>
