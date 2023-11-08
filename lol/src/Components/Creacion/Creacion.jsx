@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { FavoritosContext } from '../Context/CreacionesContext';
 import { Button } from "react-bootstrap";
+import "./Creacion.css"
 
 export function Creacion() {
     const location = useLocation();

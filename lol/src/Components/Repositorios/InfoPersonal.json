@@ -21,8 +21,7 @@
         "nacimiento":"01/4/2006",
         "rol":"Estudiante ORT",
         "ubicacion":"Buenos Aires",
-        "skills":{
-            "skill1":"no se yo tambien soy re capo"
-        }
+        "skills": ["no se soy re capo", "no se soy re capo", "no se soy re capo"]
+
     }
 ]

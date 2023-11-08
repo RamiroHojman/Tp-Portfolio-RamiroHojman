@@ -1,7 +1,6 @@
 
   
   footer div {
-    max-width: 600px;
     width: 100%; /* Cambiamos esto a 100% */
     display: flex;
     justify-content: space-between;
@@ -24,6 +23,8 @@
 .piezaFooter {
     margin-left: 2%;
 }
-.footerContain{
-  background-color: red;
+
+.contactForm {
+  width: 50%; /* Asignamos un ancho al ContactForm */
+  box-sizing: border-box; /* Para incluir el padding en el cálculo del ancho */
 }
