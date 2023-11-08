@@ -1,9 +1,4 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
-import { useContext } from "react";
-import { FavoritosContext } from '../Context/CreacionesContext';
-import { Button } from "react-bootstrap";
-import "./Creacion.css"
+// ... (importaciones)
 
 export function Creacion() {
     const location = useLocation();
@@ -26,8 +21,15 @@ export function Creacion() {
     }
 
     function borrar() {
-        localStorage.removeItem('Favoritos');
+        // Implementa la lógica para eliminar el elemento actual de FavoritosG
+        const updatedFavoritosG = FavoritosG.filter(item => item.id !== location.state.id);
+
+        setFavoritosG(updatedFavoritosG);
+        localStorage.setItem('Favoritos', JSON.stringify(updatedFavoritosG));
     }
+
+    // Verifica si el elemento actual está en la lista de favoritos
+    const estaEnFavoritos = FavoritosG && FavoritosG.some(item => item.id === location.state.id);
 
     return (
         <>
@@ -43,7 +45,7 @@ export function Creacion() {
                             <h2 className="textoCreacion">Fecha: {location.state.fecha}</h2>
                         </div>
                         <div className="botonesCreacion">
-                            <Button className="botonCreacion" variant="danger" onClick={borrar}>Borrar</Button> {/* hay que hacer que solo aparezca cuando esta en favoritos */}
+                            {estaEnFavoritos && <Button className="botonCreacion" variant="danger" onClick={borrar}>Borrar</Button>}
                             <Button className="botonCreacion" onClick={apretar}>Favoritos</Button>
                         </div>
                     </div>
