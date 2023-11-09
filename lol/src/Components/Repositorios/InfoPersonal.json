@@ -1,25 +1,13 @@
-[
+
     {
         "id":"1",
         "nombre":"Ramiro Hojman",
         "img": "http://drive.google.com/uc?export=view&id=1NRctCxgF9WL5ljv4WzNWK61dYswW9wQD",
         "banner":"https://i.pinimg.com/originals/71/9b/1f/719b1f1e643b903158d18547cf1d7c8f.png",
-        "descripción":"Soy muy buena persona",
+        "descripción":"Soy un apasionado desarrollador de software con experiencia en el desarrollo web frontend y backend. Mi enfoque se centra en crear soluciones eficientes y escalables para satisfacer las necesidades de los clientes. Poseo habilidades sólidas en la creación de interfaces de usuario atractivas y funcionales, así como en la implementación de lógica de negocio robusta. Soy proactivo, colaborativo y disfruto resolviendo desafíos complejos en equipo.",
         "nacimiento":"09/1/2006",
         "rol":"Estudiante ORT",
         "ubicacion":"Buenos Aires",
-        "skills":["no se soy re capo", "no se soy re capo", "no se soy re capo"]
-    },
-    {
-        "id":"2",
-        "nombre":"Alan Plaun",
-        "img": "https://lh3.googleusercontent.com/a/ACg8ocLWNErlvDunPkRnS9_ymgcSKp5g3-Y6l7yPtT10UpAW1A=s288-c-no",
-        "banner":"https://pbs.twimg.com/media/F7YIb-yXsAAwQ_U.jpg:large",
-        "descripción":"Me llamo Alan, no voy a decir mi apodo.",
-        "nacimiento":"01/4/2006",
-        "rol":"Estudiante ORT",
-        "ubicacion":"Buenos Aires",
-        "skills": ["no se soy re capo, me llamo Alan", "no se soy re capo, me llamo Alan", "no se soy re capo, me llamo Alan"]
-
+        "skills":["Desarrollo Frontend: HTML, CSS, JavaScript", "Backend y Base de Datos: Node.js, MongoDB", "Frameworks y Librerías: React, Express.js, Mongoose"]
     }
-]
+    

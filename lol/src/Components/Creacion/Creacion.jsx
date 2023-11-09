@@ -3,6 +3,7 @@ import { FavoritosContext } from '../Context/CreacionesContext';
 import React, { useContext, useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
 import ModalComponent from '../Modal/Modal';
+import "./Creacion.css"
 
 export function Creacion() {
     const location = useLocation();
