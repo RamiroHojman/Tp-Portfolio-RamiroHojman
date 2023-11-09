@@ -1,15 +1,21 @@
 import { useLocation } from 'react-router-dom';
 import { FavoritosContext } from '../Context/CreacionesContext';
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Button } from 'react-bootstrap';
-import ModalComponent from '../Modal/Modal'
+import ModalComponent from '../Modal/Modal';
 
 export function Creacion() {
     const location = useLocation();
-    const { FavoritosG, setFavoritosG } = useContext(FavoritosContext);
+    const { FavoritosG, setFavoritosG, usuarios, setUsuarios } = useContext(FavoritosContext);
 
     // Estado para controlar la visibilidad del modal
     const [showModal, setShowModal] = useState(false);
+    const [tempMail, setTempMail] = useState("");
+
+    // Limpiar el estado cuando la ubicación cambie
+    useEffect(() => {
+        setShowModal(false); // Cierra el modal al cambiar de proyecto
+    }, [location.pathname]);
 
     function apretar() {
         const fav = location.state;
@@ -26,19 +32,28 @@ export function Creacion() {
         console.log("localstorage", localStorage.getItem('Favoritos'));
         console.log("FavoritosG", updatedFavoritosG);
 
+        // Guardar el correo en el contexto
+        if (usuarios) {
+            setUsuarios({
+                ...usuarios,
+                mail: tempMail,
+            });
+        }
+
         // Abre el modal después de guardar en favoritos
         setShowModal(true);
     }
 
     function borrar() {
-        // Implementa la lógica para eliminar el elemento actual de FavoritosG
-        const updatedFavoritosG = FavoritosG.filter(item => item.id !== location.state.id);
-
+        // Obtenemos el id del proyecto actual desde el estado del componente
+        const proyectoId = location.state.id;
+    
+        // Implementamos la lógica para eliminar solo el proyecto actual de FavoritosG
+        const updatedFavoritosG = FavoritosG.filter(item => item.id !== proyectoId);
+    
         setFavoritosG(updatedFavoritosG);
         localStorage.setItem('Favoritos', JSON.stringify(updatedFavoritosG));
     }
-
-    // Verifica si el elemento actual está en la lista de favoritos
     const estaEnFavoritos = FavoritosG && FavoritosG.some(item => item.id === location.state.id);
 
     return (
@@ -55,23 +70,17 @@ export function Creacion() {
                             <h2 className="textoCreacion">Fecha: {location.state.fecha}</h2>
                         </div>
                         <div className="botonesCreacion">
-                            {estaEnFavoritos ? (
                                 <Button className="botonCreacion" variant="danger" onClick={borrar}>
                                     Borrar
                                 </Button>
-                            ) : (
                                 <Button className="botonCreacion" onClick={apretar}>
                                     Favoritos
                                 </Button>
-                            )}
                             {showModal && <ModalComponent />}
                         </div>
-
                     </div>
                 </div>
             </div>
-
-
         </>
     )
 }
