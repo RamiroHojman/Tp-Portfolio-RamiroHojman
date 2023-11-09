@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm, Controller } from 'react-hook-form';
-
+import "./Contacto.css"
+import { Button } from 'bootstrap';
 const ContactForm = () => {
     const { handleSubmit, control, formState: { errors } } = useForm();
 
@@ -10,7 +11,7 @@ const ContactForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className='contacto'>
             <div>
                 <label>Email:</label>
                 <Controller
@@ -23,7 +24,7 @@ const ContactForm = () => {
                             message: 'Ingresa un correo electrónico válido',
                         },
                     }}
-                    render={({ field }) => <input {...field} />}
+                    render={({ field }) => <input  className='textoInput' {...field} />}
                 />
                 {errors.email && <p>{errors.email.message}</p>}
             </div>
@@ -34,12 +35,12 @@ const ContactForm = () => {
                     name="description"
                     control={control}
                     rules={{ required: 'Este campo es requerido' }}
-                    render={({ field }) => <textarea {...field} />}
+                    render={({ field }) => <textarea className='textoInput' {...field} />}
                 />
                 {errors.description && <p>{errors.description.message}</p>}
             </div>
 
-            <button type="submit">Enviar</button>
+            <button type="submit" className="btn btn-primary botonEnviar">Enviar</button>
         </form>
     );
 };

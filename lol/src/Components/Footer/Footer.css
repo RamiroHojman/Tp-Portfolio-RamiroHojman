@@ -28,3 +28,10 @@
   width: 50%; /* Asignamos un ancho al ContactForm */
   box-sizing: border-box; /* Para incluir el padding en el cálculo del ancho */
 }
+.footerTodo{
+  margin-top: 2%;
+  background-color: #393939;
+  color: white;
+  height: 10%;
+  
+}

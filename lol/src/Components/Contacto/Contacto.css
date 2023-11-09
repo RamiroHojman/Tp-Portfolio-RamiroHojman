@@ -1,0 +1,12 @@
+.contacto{
+    width: 100%; /* Cambiamos esto a 100% */
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.textoInput{
+    height: 50%;
+}
+.botonEnviar{
+    height: 80%;
+}

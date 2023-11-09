@@ -4,7 +4,7 @@ import "./Footer.css"
 
 export function Footer() {
   return (
-    <footer>
+    <footer className='footerTodo'>
     <div className='footerContain container'>
       <div className='info'>
         <p className='piezaFooter'>Dirección: Calle Falsa 123, Ciudad Ficticia</p>
